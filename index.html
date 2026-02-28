@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matvey — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#">Matvey</a>
+    <nav class="nav__links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn btn--ghost" id="themeBtn" aria-label="Toggle theme">Theme</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="pill">Frontend Developer</p>
+        <h1 class="title">I build clean, modern web interfaces.</h1>
+        <p class="subtitle">
+          I’m Matvey. I focus on responsive UI, JavaScript apps, and polished UX.
+          Open to remote junior opportunities.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="mailto:matviimatvey@gmail.com">Email Me</a>
+        </div>
+
+        <div class="meta">
+          <span>📍 Turkey</span>
+          <span>🧠 Vanilla JS • CSS Grid • Flexbox</span>
+          <span>💾 LocalStorage • Git/GitHub</span>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="card">
+          <h3>Featured</h3>
+          <p class="muted">Productivity Command Center (SPA)</p>
+          <div class="card__actions">
+            <a class="link" target="_blank" rel="noreferrer"
+               href="https://matviimatvey-ux.github.io/productivity-command-center/">Live Demo →</a>
+            <a class="link" target="_blank" rel="noreferrer"
+               href="https://github.com/matviimatvey-ux/productivity-command-center">GitHub →</a>
+          </div>
+          <div class="divider"></div>
+          <ul class="mini">
+            <li>Kanban + Pomodoro + Habits + Notes</li>
+            <li>Offline-first via LocalStorage</li>
+            <li>State-driven UI updates</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Projects</h2>
+        <p class="muted">Live demos + source code.</p>
+      </div>
+
+      <div class="grid">
+        <article class="project">
+          <h3>Productivity Command Center</h3>
+          <p class="muted">Advanced JavaScript SPA with analytics + offline persistence.</p>
+          <div class="tags">
+            <span>Vanilla JS</span><span>CSS Grid</span><span>LocalStorage</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn--sm" target="_blank" rel="noreferrer"
+               href="https://matviimatvey-ux.github.io/productivity-command-center/">Live</a>
+            <a class="btn btn--sm btn--ghost" target="_blank" rel="noreferrer"
+               href="https://github.com/matviimatvey-ux/productivity-command-center">Code</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>E-commerce Landing Page</h3>
+          <p class="muted">Modern responsive landing page built with HTML/CSS.</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>Responsive</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn--sm btn--ghost" target="_blank" rel="noreferrer"
+               href="https://github.com/matviimatvey-ux/ecommerce-landing-page">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Modern Coffee Website</h3>
+          <p class="muted">Clean UI website using Flexbox & CSS Grid.</p>
+          <div class="tags">
+            <span>CSS Grid</span><span>Flexbox</span><span>UI</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn--sm btn--ghost" target="_blank" rel="noreferrer"
+               href="https://github.com/matviimatvey-ux/modern-coffee-website">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Productivity Dashboard (Prototype)</h3>
+          <p class="muted">JavaScript dashboard experiments and UI components.</p>
+          <div class="tags">
+            <span>JavaScript</span><span>UI</span><span>DOM</span>
+          </div>
+          <div class="actions">
+            <a class="btn btn--sm btn--ghost" target="_blank" rel="noreferrer"
+               href="https://github.com/matviimatvey-ux/productivity-dashboard">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Skills</h2>
+        <p class="muted">Focused on fundamentals + clean UI.</p>
+      </div>
+
+      <div class="skillgrid">
+        <div class="skill">
+          <h4>Frontend</h4>
+          <p class="muted">HTML5, CSS3, Responsive Design, Accessibility basics</p>
+        </div>
+        <div class="skill">
+          <h4>JavaScript</h4>
+          <p class="muted">DOM, Events, State logic, LocalStorage, ES6+</p>
+        </div>
+        <div class="skill">
+          <h4>Layout</h4>
+          <p class="muted">CSS Grid, Flexbox, clean component-like styling</p>
+        </div>
+        <div class="skill">
+          <h4>Tools</h4>
+          <p class="muted">Git, GitHub, WebStorm, VS Code</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container contact">
+      <div>
+        <h2>Contact</h2>
+        <p class="muted">Let’s build something clean and useful.</p>
+      </div>
+
+      <div class="contact__box">
+        <a class="btn" href="mailto:matviimatvey@gmail.com">matviimatvey@gmail.com</a>
+        <a class="btn btn--ghost" target="_blank" rel="noreferrer"
+           href="https://github.com/matviimatvey-ux">GitHub Profile</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="muted">© <span id="year"></span> Matvey — Built with HTML/CSS/JS</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

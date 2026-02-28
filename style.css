@@ -1,0 +1,159 @@
+:root{
+    --bg: #0b0c10;
+    --card: #11131a;
+    --text: #eef2ff;
+    --muted: rgba(238,242,255,.7);
+    --line: rgba(238,242,255,.12);
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+    --radius: 18px;
+    --max: 1080px;
+}
+
+[data-theme="light"]{
+    --bg: #f7f7fb;
+    --card: #ffffff;
+    --text: #111827;
+    --muted: rgba(17,24,39,.65);
+    --line: rgba(17,24,39,.12);
+    --shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+a{color:inherit; text-decoration:none}
+.container{max-width:var(--max); margin:0 auto; padding:0 18px}
+
+.header{
+    position:sticky; top:0;
+    backdrop-filter: blur(10px);
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    border-bottom: 1px solid var(--line);
+    z-index: 20;
+}
+
+.nav{
+    display:flex; align-items:center; justify-content:space-between;
+    height:64px;
+    gap:12px;
+}
+.brand{font-weight:700; letter-spacing:.3px}
+.nav__links{display:flex; gap:18px}
+.nav__links a{opacity:.8}
+.nav__links a:hover{opacity:1}
+
+.hero{padding:56px 0 24px}
+.hero__grid{
+    display:grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap:18px;
+}
+@media (max-width: 900px){
+    .hero__grid{grid-template-columns:1fr}
+    .nav__links{display:none}
+}
+
+.pill{
+    display:inline-flex; align-items:center;
+    padding:6px 10px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    font-size:12px;
+    color: var(--muted);
+}
+
+.title{font-size:46px; line-height:1.1; margin:14px 0 10px}
+@media (max-width: 520px){.title{font-size:34px}}
+
+.subtitle{color:var(--muted); max-width:60ch}
+
+.hero__cta{display:flex; gap:10px; margin:18px 0}
+.meta{display:flex; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:13px}
+
+.card{
+    background: var(--card);
+    border:1px solid var(--line);
+    border-radius: var(--radius);
+    padding:18px;
+    box-shadow: var(--shadow);
+}
+
+.hero__card .card{height:100%}
+.card__actions{display:flex; gap:14px; margin:10px 0}
+.divider{height:1px; background:var(--line); margin:14px 0}
+.mini{margin:0; padding-left:18px; color:var(--muted)}
+.muted{color:var(--muted)}
+.link{color:var(--text); opacity:.9}
+.link:hover{opacity:1}
+
+.section{padding:38px 0}
+.section__head{display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin-bottom:14px}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:14px;
+}
+@media (max-width: 860px){.grid{grid-template-columns:1fr}}
+
+.project{
+    background: var(--card);
+    border:1px solid var(--line);
+    border-radius: var(--radius);
+    padding:18px;
+    box-shadow: var(--shadow);
+}
+.project h3{margin:0 0 8px}
+.tags{display:flex; flex-wrap:wrap; gap:8px; margin:12px 0}
+.tags span{
+    font-size:12px;
+    padding:6px 10px;
+    border-radius:999px;
+    border:1px solid var(--line);
+    color: var(--muted);
+}
+.actions{display:flex; gap:10px; margin-top:10px}
+
+.skillgrid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:14px;
+}
+@media (max-width: 860px){.skillgrid{grid-template-columns:1fr}}
+.skill{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)}
+.skill h4{margin:0 0 8px}
+
+.contact{
+    display:flex; align-items:center; justify-content:space-between; gap:14px;
+}
+@media (max-width: 860px){.contact{flex-direction:column; align-items:stretch}}
+.contact__box{display:flex; gap:10px; flex-wrap:wrap}
+
+.footer{padding:20px 0; border-top:1px solid var(--line); margin-top:20px}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:10px 14px;
+    border-radius: 12px;
+    border:1px solid var(--line);
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 600;
+    cursor:pointer;
+}
+.btn:hover{opacity:.95}
+.btn--ghost{
+    background: transparent;
+    color: var(--text);
+}
+.btn--sm{padding:8px 12px; border-radius:10px; font-size:13px}
